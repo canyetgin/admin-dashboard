@@ -273,7 +273,7 @@ main .insights .progress {
 }
 
 main .insights svg {
-  margin-left: 1.7rem ;
+  margin-left: 1.7rem;
   width: 7rem;
   height: 7rem;
 }
@@ -286,7 +286,6 @@ main .insights svg circle {
   transform: translate(5px, 5px);
   stroke-dasharray: 110;
   stroke-dashoffset: 90;
-
 }
 
 main .insights svg circle {
@@ -297,26 +296,21 @@ main .insights svg circle {
   transform: translate(5px, 5px);
   stroke-dasharray: 110;
   stroke-dashoffset: 90;
-
 }
-main  .insights .income svg circle {
-  
+main .insights .income svg circle {
   stroke: var(--success);
-  
+
   stroke-dasharray: 150;
   stroke-dashoffset: -30;
-
 }
-main  .insights .expenses svg circle {
-  
+main .insights .expenses svg circle {
   stroke: var(--danger);
-  
+
   stroke-dasharray: 110;
   stroke-dashoffset: 35;
-
 }
 
-main .insights .progress .number{
+main .insights .progress .number {
   position: absolute;
   margin-top: -3px;
   margin-left: 1.6rem;
@@ -327,4 +321,118 @@ main .insights .progress .number{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+main .insights small {
+  margin-top: 1.3rem;
+  display: block;
+}
+
+main .recent-orders {
+  margin-top: 2rem;
+}
+
+main .recent-orders h2 {
+  margin-bottom: 0.8rem;
+}
+
+main .recent-orders table {
+  background-color: white;
+  width: 100%;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+}
+
+main .recent-orders table :hover {
+  box-shadow: none;
+}
+
+main table tbody td {
+  height: 2.8rem;
+  border-bottom: 1px solid lightgray;
+}
+main table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+main .recent-orders a {
+  text-align: center;
+  display: block;
+  margin: 1rem auto;
+}
+
+.right {
+  margin-top: 1.4rem;
+}
+
+.right .top {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.right .top button {
+  display: none;
+}
+
+.right .theme-toggler {
+  background: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.6rem;
+  width: 4.2rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+}
+
+.right .theme-toggler span {
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.right .theme-toggler span.active {
+  background: var(--primary);
+  color: white;
+  border-radius: var(--border-radius-1);
+}
+
+.right .top .profile {
+  display: flex;
+  gap: 2rem;
+  text-align: right;
+}
+
+.right .recent-updates {
+  margin-top: 1rem;
+}
+
+.right .recent-updates h2 {
+  margin-bottom: 0.8rem;
+}
+.right .recent-updates .updates {
+  background-color: white;
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+}
+
+.right .recent-updates .updates:hover {
+  box-shadow: none;
+}
+
+.right .recent-updates .updates .update {
+  display: grid;
+  grid-template-columns: 2.6rem auto;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
