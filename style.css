@@ -555,7 +555,7 @@ main .recent-orders a {
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 94%;
+    width: 90%;
     grid-template-columns: 1fr;
   }
   aside {
@@ -622,7 +622,7 @@ main .recent-orders a {
     pad: 0 0.8rem;
     height: 4.6rem;
     background-color: white;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     z-index: 2;
     box-shadow: 0 1rem 1rem lightgray;
