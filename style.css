@@ -518,8 +518,13 @@ main .recent-orders a {
   }
 
   aside .sidebar a {
-    width: 5.6rem;
+    width: 100%;
   }
+  aside .sidebar a.active {
+  background-color: gainsboro;
+  margin-left: 10px;
+  color: gray;
+}
   aside .sidebar a:last-child {
     position: relative;
     margin-top: 1.8rem;
@@ -534,10 +539,13 @@ main .recent-orders a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin: 2rem 0 0 8.8rem;
+    
+  }
+  main .recent-orders h2{
+    text-align: center;
   }
   main .recent-orders table {
-    width: 83vh;
+    width: 94vw;
   }
   main table tbody thead tr td:last-child,
   main table tbody thead tr td:first-child {
